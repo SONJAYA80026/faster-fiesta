@@ -1,0 +1,94 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Message that will be displayed on users first issue'
+        pr-message: 'Message that will be displayed on users first pull request'
+- name: Setup Go environment
+  uses: actions/setup-go@v2.1.3
+  with:
+    # The Go version to download (if necessary) and use. Supports semver spec and ranges.
+    go-version: # optional
+    # Whether to download only stable versions
+    stable: # optional, default is true
+    # Used to pull node distributions from go-versions.  Since there's a default, this is typically not supplied by the user.
+    token: # optional, default is ${{ github.token }}
+    
+    
+    
+    - name: Set up gcloud Cloud SDK environment
+  # You may pin to the exact commit or the version.
+  # uses: google-github-actions/setup-gcloud@94337306dda8180d967a56932ceb4ddcf01edae7
+  uses: google-github-actions/setup-gcloud@v0.2.0
+  with:
+    # Version of the gcloud SDK to install. If unspecified or set to "latest",
+the latest available gcloud SDK version for the target platform will be
+installed. Example: "290.0.1".
+    version: # optional, default is latest
+    # Service account email address to use for authentication. This is required
+for legacy .p12 keys but can be omitted for .json keys. This is usually of
+the format <name>@<project-id>.iam.gserviceaccount.com.
+    service_account_email: # optional
+    # Service account key to use for authentication. This should be the JSON
+formatted private key which can be exported from the Cloud Console. The
+value can be raw or base64-encoded.
+    service_account_key: # optional
+    # ID of the Google Cloud project. If provided, this will configure gcloud to
+use this project ID by default for commands. Individual commands can still
+override the project using the --project flag which takes precedence.
+    project_id: # optional
+    # Export the provided credentials as Google Default Application Credentials.
+This will make the credentials available to later steps via the
+GOOGLE_APPLICATION_CREDENTIALS environment variable. Future steps that
+consume Default Application Credentials will automatically detect and use
+these credentials.
+    export_default_credentials: # optional
+    
+    
+    
+    - name: Environment Printer
+  # You may pin to the exact commit or the version.
+  # uses: managedkaos/print-env@cc44fee1591e49c86931a4a7458926ec441a85dd
+  uses: managedkaos/print-env@v1.0
+    
+    - name: Default Environment
+  # You may pin to the exact commit or the version.
+  # uses: Actions-R-Us/default-env@54a23e025f08232ce669721fa0435ba4611c6455
+  uses: Actions-R-Us/default-env@v1.0.1
+    
+    
+    
+    - name: Setup Rust environment
+  # You may pin to the exact commit or the version.
+  # uses: raftario/setup-rust-action@f74294776374514bbcc27b4623c1b220ef9394bf
+  uses: raftario/setup-rust-action@v1.0.0
+  with:
+    # Rust channel (version) to use (defaults to stable)
+    rust-channel: # optional, default is 
+    # Rust host to use (defaults to current platform)
+    rust-host: # optional, default is 
+    # Rust target to compile for (defaults to none)
+    rust-target: # optional, default is 
+    # Enable caching (anything but 'true' defaults to 'false')
+    cache: # optional, default is true
+    # Install rustfmt (anything but 'true' defaults to 'false')
+    install-rustfmt: # optional, default is false
+    # Install clippy (anything but 'true' defaults to 'false')
+    install-clippy: # optional, default is false
+    # Install cross (anything but 'true' defaults to 'false')
+    install-cross: # optional, default is false
+    
+    
+    
+    
+    
