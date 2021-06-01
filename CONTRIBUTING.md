@@ -1,153 +1,37 @@
-# Contributing to GitHub Desktop
+# Contributing Guide
 
-:+1: :tada: :sparkling_heart: Thanks for your interest! :sparkling_heart: :tada: :+1:
-
-The following is a set of guidelines for contributing to GitHub Desktop and its
-related projects, which are hosted in the [Desktop organization](https://github.com/desktop)
-on GitHub. These are just guidelines, not rules. Use your best judgment, and
-feel free to propose changes to this document in a pull request.
-
-Note that GitHub Desktop is an evolving project, so expect things to change over
-time as the team learns, listens and refines how we work with the community.
-
-#### Table Of Contents
-
-- [What should I know before I get started?](#what-should-i-know-before-i-get-started)
-  * [Code of Conduct](#code-of-conduct)
-  * [The Roadmap](#the-roadmap)
-
-- [How Can I Contribute?](#how-can-i-contribute)
-  * [Reporting Bugs](#reporting-bugs)
-  * [Suggesting Enhancements](#suggesting-enhancements)
-  * [Help Wanted](#help-wanted)
-
-- [Process Documentation](#process-documentation)
-
-## What should I know before I get started?
-
-### Code of Conduct
-
-This project adheres to the Contributor Covenant [code of conduct](../CODE_OF_CONDUCT.md).
-By participating, you are expected to uphold this code.
-Please report unacceptable behavior to [opensource+desktop@github.com](mailto:opensource+desktop@github.com).
-
-### The Roadmap
-
-GitHub Desktop recently announced its
-[1.0 release](https://github.com/blog/2437-announcing-github-desktop-1-0) and
-are working towards deprecating the classic Mac and Windows applications.
-
-Beyond that, we are working on a roadmap you can read [here](https://github.com/desktop/desktop/blob/development/docs/process/roadmap.md).
-The immediate milestones are more detailed, and the latter milestones are more
-fuzzy and subject to change.
-
-If you have ideas or suggestions please read the
-[Suggesting Enhancements](#suggesting-enhancements) section below to understand
-how to contribute your feedback.
-
-## How Can I Contribute?
-
-### Reporting Bugs
-
-This section guides you through submitting a bug report for GitHub Desktop.
-Following these guidelines helps maintainers and the community understand your
-report :pencil:, reproduce the behavior :computer: :computer:, and find related
-reports :mag_right:.
-
-Before creating bug reports, please check [this list](#before-submitting-a-bug-report)
-as you might find out that you don't need to create one. When you are creating
-a bug report, please [include as many details as possible](#how-do-i-submit-a-good-bug-report).
-Fill out [the required template](ISSUE_TEMPLATE/bug_report.md), the information
-it asks for helps us resolve issues faster.
-
-#### Before Submitting A Bug Report
-
-**Perform a [cursory search](https://github.com/desktop/desktop/labels/bug)**
-to see if the problem has already been reported. If it does exist, add a
-:thumbsup: to the issue to indicate this is also an issue for you, and add a
-comment to the existing issue if there is extra information you can contribute.
-
-#### How Do I Submit A Bug Report?
-
-Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/).
-
-Simply create an issue on the [GitHub Desktop issue tracker](https://github.com/desktop/desktop/issues/new?template=bug_report.md)
-and fill out the provided issue template.
-
-The information we are interested in includes:
-
- - details about your environment - which build, which operating system
- - details about reproducing the issue - what steps to take, what happens, how
-   often it happens
- - other relevant information - log files, screenshots, etc
-
-### Suggesting Enhancements
-
-This section guides you through submitting an enhancement suggestion for
-GitHub Desktop, including completely new features and minor improvements to
-existing functionality. Following these guidelines helps maintainers and the
-community understand your suggestion :pencil: and find related suggestions
-:mag_right:.
-
-Before creating enhancement suggestions, please check [this list](#before-submitting-an-enhancement-suggestion)
-as you might find out that you don't need to create one. When you are creating
-an enhancement suggestion, please [include as many details as possible](#how-do-i-submit-a-good-enhancement-suggestion).
-Fill in [the template](ISSUE_TEMPLATE/problem-to-raise.md), including the steps
-that you imagine you would take if the feature you're requesting existed.
-
-#### Before Submitting An Enhancement Suggestion
-
-**Perform a [cursory search](https://github.com/desktop/desktop/labels/enhancement)**
-to see if the enhancement has already been suggested. If it has, add a
-:thumbsup: to indicate your interest in it, or comment if there is additional
-information you would like to add.
-
-#### How Do I Submit An Enhancement Suggestion?
-
-Enhancement suggestions are tracked as [GitHub issues](https://guides.github.com/features/issues/).
-
-Simply create an issue on the [GitHub Desktop issue tracker](https://github.com/desktop/desktop/issues/new?template=feature_request.md)
-and fill out the provided issue template.
-
-Some additional advice:
-
-* **Use a clear and descriptive title** for the feature request
-* **Provide a step-by-step description of the suggested enhancement**
-  This additional context helps the maintainers understand the enhancement from
-  your perspective
-* **Explain why this enhancement would be useful** to GitHub Desktop users
-* **Include screenshots and animated GIFs** if relevant to help you demonstrate
-  the steps or point out the part of GitHub Desktop which the suggestion is
-  related to. You can use [this tool](http://www.cockos.com/licecap/) to record
-  GIFs on macOS and Windows
-* **List some other applications where this enhancement exists, if applicable**
-
-### Help Wanted
-
-As part of building GitHub Desktop, we'll identify tasks that are good for
-external contributors to pick up. These tasks:
-
- - have low impact, or have a known workaround
- - should be addressed
- - have a narrow scope and/or easy reproduction steps
- - can be worked on independent of other tasks
-
-These issues will be labelled as [`help wanted`](https://github.com/desktop/desktop/labels/help%20wanted)
-in the repository. If you are interested in contributing to the project, please
-comment on the issue to let the core team (and the community) know you are
-interested in the issue.
-
-### Set Up Your Machine
-
-Start [here](https://github.com/desktop/desktop/blob/development/docs/contributing/setup.md).
+1. Make sure you put things in the right category!
+2. Always add your items to the end of a list. To be fair, the order is first-come-first-serve.
+3. If you think something belongs in the wrong category, or think there needs to be a new category, feel free to edit things too.
 
 
-## Process Documentation
 
-These documents are useful resources for contributors  to learn more about the project and how it is run:
+### Projects using Vuejs
 
- - [Teams](https://github.com/desktop/desktop/blob/development/docs/process/teams.md)
- - [Release Planning](https://github.com/desktop/desktop/blob/development/docs/process/release-planning.md)
- - [Issue Triage](https://github.com/desktop/desktop/blob/development/docs/process/issue-triage.md)
- - [Issue and Pull Request Labels](https://github.com/desktop/desktop/blob/development/docs/process/labels.md)
- - [Pull Requests](https://github.com/desktop/desktop/blob/development/docs/process/pull-requests.md)
+Make sure you put things in the right category. There are two main categories:
+- Open Source
+- Apps/Websites
+
+#### Open source
+
+Open Source section gives the possibility for developers to contribute and be a part of an opensource project using their knowledge of the vuejs.
+You should put your project in this category if the following conditions are true:
+- The description for the link should not contain links to the author and third-party resources - this should be in the documentation (README)
+- The documentation (README) contains a description of the project, illustration of the project with a demo or screenshots and a CONTRIBUTING section.
+- The documentation is in English.
+- The project is active and maintained.
+- The project accepts contributions.
+- Not a commercial product.
+
+The link provided should be the link of the github repository, not the demo.
+If you consider your project finished, and it does not need any contributions, consider the apps/website category.
+
+#### Apps/Websites
+
+Apps/Websites gives the opportunity to showcase the awesome things we can build with vuejs.
+You should put your app/website in this category if the following conditions are true:
+- The website is available without errors or ssl certificate problems, and load in a reasonable amount of time.
+- The website is using vuejs intensively. It should detect vue with [vue-devtools](https://github.com/vuejs/vue-devtools).
+- If you cannot detect vue with `vue-devtools` due to work at non public pages (e.g. for enterprise website), you can send Pull Request with screenshot that detected it.
+- The website is original and not too simple. For that reason, blogs and simple landing pages are rejected.
+- A commercial product using Vue, provided that guests could reasonably check out how Vue was used (i.e. A headless CMS which uses Vue for the Admin/editor Area and offers a free tier).
