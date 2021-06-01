@@ -1,0 +1,29 @@
+﻿"Open Positions Summary"
+"","Name","Symbol","Exchange","Type","Amount","Avg Price","Current Price","Extended Hours","Extended Hours (%)","Prev.","Market Value","Commission","Weight","Daily P/L","Daily P/L%","Net P/L%","Net P/L","Next Earnings Date","Exchange","Last","Bid","Ask","Extended Hours","Extended Hours (%)","Open","Prev.","High","Low","Chg.","Chg. %","Vol.","Next Earnings Date","Time","Market Cap","Revenue","Average Vol. (3m)","EPS","P/E Ratio","Beta","Dividend","Yield","5 Minutes","15 Minutes","30 Minutes","Hourly","5 Hours","Daily","Weekly","Monthly","Daily","1 Week","1 Month","YTD","1 Year","3 Years"
+
+"Market Value","Rp0.00"
+"Open P/L","Rp0.00 / 0.00%"
+"Daily P/L","Rp144,985.00 / 0.01%"
+"Total P/L","Rp20,218,555,495,131,960.00"
+
+
+"Open Positions"
+"","Name","Symbol","Exchange","Open Date","Type","Amount","Open Price","Current Price","Extended Hours","Extended Hours (%)","Prev.","Market Value","Commission","Net P/L%","Weight","Daily P/L","Daily P/L%","Net P/L","Next Earnings Date"
+
+
+"Closed Positions"
+"","Name","Symbol","Exchange","Open Date","Type","Amount","Open Price","Close Date","Close Price","Gain%","Net P/L"
+"","EUR/USD","EUR/USD","FX","04/28/2021","SELL","100000.00000000","1.2077","04/28/2021","1.2076","8.28%","Rp144,985.00"
+"","BTC/EUR","BTC/EUR","BitStamp","04/27/2021","BUY","1000.00000000","45,725.9","04/27/2021","45,726.9","0.00%","Rp17,506,900.00"
+"","Bitcoin Cash ETH Index","BCH/ETH","Investing.com","04/25/2021","SELL","100000000000.00000000","0.33891","04/25/2021","0.33754","0.40%","Rp5,364,097,999,996,085.00"
+"","Bitcoin IDR Index","BTC/IDR","Investing.com","11/26/2020","SELL","999999999999.99999999","768,603,649","04/25/2021","768,595,155","0.00%","Rp100,000,000,000,000.00"
+"","Bitcoin Cash ETH Index","BCH/ETH","Investing.com","04/25/2021","BUY","999999999999.99999999","0.33936","04/25/2021","0.33953","0.05%","Rp6,656,179,996,084,600.00"
+"","Bitcoin Cash ETH Index","BCH/ETH","Investing.com","04/25/2021","BUY","999999999999.99999999","0.33935","04/25/2021","0.33953","0.05%","Rp7,047,720,000,000,392.00"
+"","Bitcoin Euro Index","BTC/EUR","Investing.com","04/25/2021","SELL","1000000.00000000","41,324.9","04/25/2021","41,666.3","-0.83%","-Rp5,976,855,660,000.00"
+"","BTC/IDR","BTC/IDR","BitcoinIndonesia","04/24/2021","SELL","1000000.00000000","762,762,000","04/24/2021","761,493,000","0.17%","Rp1,269,000,000,000.00"
+"","BTC/EUR","BTC/EUR","Coinbase Pro","04/24/2021","SELL","100000.00000000","41,354.6","04/24/2021","41,583.5","-13.84%","-Rp400,732,941,000.00"
+"","Bitcoin Euro Index","BTC/EUR","Investing.com","04/24/2021","SELL","100000000.00000000","41,930.7","04/24/2021","41,327.7","1.44%","Rp1,055,666,070,000,000.12"
+
+"Closed P/L","Rp20,218,555,495,131,960.00"
+
+

@@ -1,0 +1,31 @@
+﻿"Open Positions Summary"
+"","Name","Symbol","Exchange","Type","Amount","Avg Price","Current Price","Extended Hours","Extended Hours (%)","Prev.","Market Value","Commission","Weight","Daily P/L","Daily P/L%","Net P/L%","Net P/L","Next Earnings Date","Exchange","Last","Bid","Ask","Extended Hours","Extended Hours (%)","Open","Prev.","High","Low","Chg.","Chg. %","Vol.","Next Earnings Date","Time","Market Cap","Revenue","Average Vol. (3m)","EPS","P/E Ratio","Beta","Dividend","Yield","5 Minutes","15 Minutes","30 Minutes","Hourly","5 Hours","Daily","Weekly","Monthly","Daily","1 Week","1 Month","YTD","1 Year","3 Years"
+
+"Market Value","Rp0.00"
+"Open P/L","Rp0.00 / 0.00%"
+"Daily P/L","-Rp6,669,107,007,516.40 / -0.02%"
+"Total P/L","Rp449,888,473,477,258.81"
+
+
+"Open Positions"
+"","Name","Symbol","Exchange","Open Date","Type","Amount","Open Price","Current Price","Extended Hours","Extended Hours (%)","Prev.","Market Value","Commission","Net P/L%","Weight","Daily P/L","Daily P/L%","Net P/L","Next Earnings Date"
+
+
+"Closed Positions"
+"","Name","Symbol","Exchange","Open Date","Type","Amount","Open Price","Close Date","Close Price","Gain%","Net P/L"
+"","DJ Islamic Market World",".DJIMI","GLOBAL","04/28/2021","BUY","1.00000000","5,864.51","04/28/2021","5,865.44","0.02%","Rp13,483.61"
+"","XAU/USD","XAU/USD","FX","04/28/2021","SELL","100000.00000000","1,772.08","04/28/2021","1,771.94","0.79%","Rp202,979,000.00"
+"","Ethereum","ETH/USD","Investing.com","04/28/2021","SELL","1000000000.00000000","2,638.27","04/28/2021","2,638.73","-0.02%","-Rp6,669,310,000,000.60"
+"","BTC/IDR","BTC/IDR","BitcoinIndonesia","04/27/2021","BUY","100000.00000000","815,996,000","04/27/2021","815,997,000","0.00%","Rp100,000,000.00"
+"","Bitcoin IDR Index","BTC/IDR","Investing.com","04/26/2021","SELL","1000000000.00000000","789,764,815","04/26/2021","789,691,325","0.01%","Rp73,490,000,000,000.00"
+"","DJ Islamic Market World",".DJIMI","GLOBAL","04/26/2021","BUY","1000000.00000000","5,869.10","04/26/2021","5,872.18","0.05%","Rp44,655,378,550.15"
+"","KWD/USD","KWD/USD","FX","04/25/2021","BUY","999999999999.99999999","3.3214","04/26/2021","3.3214","0.00%","Rp0.00"
+"","USD/AUD","USD/AUD","FX","04/25/2021","BUY","999999999999.99999999","1.2907","04/26/2021","1.2884","-178.20%","-Rp25,825,228,000,000.00"
+"","AUD/USD","AUD/USD","FX","04/25/2021","BUY","999999999999.99999999","0.7749","04/26/2021","0.7762","167.76%","Rp18,848,050,000,000.00"
+"","FTSE All World",".FTAWORLDSR","GLOBAL","04/26/2021","BUY","1000.00000000","464.60","04/26/2021","464.81","0.05%","Rp3,043,235.15"
+"","BTC/ETH","BTC/ETH","Synthetic","10/11/2019","SELL","1000000000.00000000","21.11","04/26/2021","21.10","4.74%","Rp389,999,999,999,922.00"
+"","DJ Islamic Market World",".DJIMI","GLOBAL","04/25/2021","BUY","1.00000000","5,864.74","04/26/2021","5,869.09","0.07%","Rp63,068.48"
+
+"Closed P/L","Rp449,888,473,477,258.81"
+
+

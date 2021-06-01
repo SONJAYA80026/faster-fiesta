@@ -1,0 +1,30 @@
+﻿"Open Positions Summary"
+"","Name","Symbol","Exchange","Type","Amount","Avg Price","Current Price","Extended Hours","Extended Hours (%)","Prev.","Market Value","Commission","Weight","Daily P/L","Daily P/L%","Net P/L%","Net P/L","Next Earnings Date","Last","Bid","Ask","Open","Prev.","High","Low","Chg.","Chg. %","Vol.","Next Earnings Date","Time","Market Cap","Revenue","Average Vol. (3m)","EPS","P/E Ratio","Beta","Dividend","Yield","5 Minutes","15 Minutes","30 Minutes","Hourly","5 Hours","Daily","Weekly","Monthly","Daily","1 Week","1 Month","YTD","1 Year","3 Years"
+"","Gold","GCJ1","ICE","BUY","10000.00000000","1,734.90","1,735.10","--","--","1,727.10","$1,735,100,000.00","$0.21","100.00%","$1,735,100,000.00","0.01%","0.01%","$199,999.79","--","1,734.90","1,734.80","1,735.00","1,743.60","1,727.10","1,754.10","1,730.95","+7.80","+0.45%","-","--","05:04:23","-","","-","-","-","-","-","-","Strong Sell","Strong Sell","Strong Sell","Strong Sell","Neutral","Neutral","Strong Sell","Neutral","0.43%","0.70%","-2.41%","-8.47%","16.46%","22.01%"
+
+"Market Value","$1,735,100,000.00"
+"Open P/L","$199,999.79 / 0.01%"
+"Daily P/L","$49,999,033,762.74 / 0.00%"
+"Total P/L","$21,183,954,082.00"
+
+
+"Open Positions"
+"","Name","Symbol","Exchange","Open Date","Type","Amount","Open Price","Current Price","Extended Hours","Extended Hours (%)","Prev.","Market Value","Commission","Net P/L%","Weight","Daily P/L","Daily P/L%","Net P/L","Next Earnings Date"
+"","Gold Futures","GCJ1","ICE","03/18/2021","BUY","10000.00000000","1,734.90","1,735.10","--","--","1,727.10","$1,735,100,000.00","$0.21","0.01%","100.00%","$200,000.00","0.01%","$199,999.79","--"
+
+
+"Closed Positions"
+"","Name","Symbol","Exchange","Open Date","Type","Amount","Open Price","Close Date","Close Price","Gain%","Net P/L"
+"","BTC/GBP","BTC/GBP","Coinbase Pro","03/18/2021","SELL","10000.00000000","41,757.4","03/18/2021","41,839.5","-19.66%","-$1,145,869.82"
+"","Ethereum","ETH/USD","Investing.com","03/18/2021","SELL","10000.00000000","1,814.58","03/18/2021","1,817.22","-0.15%","-$26,400.00"
+"","Bitcoin","BTC/USD","Investing.com","03/18/2021","SELL","10000.00000000","58,297.1","03/18/2021","58,365.0","-0.12%","-$679,000.00"
+"","ETH/XAU","ETH/XAU","Synthetic","03/18/2021","SELL","10000.00000000","1.04284","03/18/2021","1.04397","-10.84%","-$19,647.88"
+"","XAU/KWD","XAU/KWD","FX","03/18/2021","SELL","1000000000.00000000","528.7700","03/18/2021","528.7200","0.95%","$165,625,000.00"
+"","Bitcoin","BTC/USD","Investing.com","03/18/2021","SELL","1000000000.00000000","58,954.5","03/18/2021","58,985.5","-0.05%","-$31,000,000,000.00"
+"","Gold Futures","GCJ1","ICE","03/18/2021","SELL","1000000000.00000000","1,749.30","03/18/2021","1,749.20","0.01%","$99,999,999,999.91"
+"","Ethereum","ETH/USD","Investing.com","03/18/2021","SELL","1000000000.00000000","1,832.41","03/18/2021","1,830.39","0.11%","$2,020,000,000.00"
+"","Gold Futures","GCJ1","ICE","03/18/2021","SELL","1000000000.00000000","1,749.35","03/18/2021","1,749.85","-0.03%","-$50,000,000,000.00"
+
+"Closed P/L","$21,183,754,082.21"
+
+

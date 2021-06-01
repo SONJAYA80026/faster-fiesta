@@ -1,0 +1,34 @@
+﻿"Open Positions Summary"
+"","Name","Symbol","Exchange","Type","Amount","Avg Price","Current Price","Extended Hours","Extended Hours (%)","Prev.","Market Value","Commission","Weight","Daily P/L","Daily P/L%","Net P/L%","Net P/L","Next Earnings Date","Exchange","Last","Bid","Ask","Extended Hours","Extended Hours (%)","Open","Prev.","High","Low","Chg.","Chg. %","Vol.","Next Earnings Date","Time","Market Cap","Revenue","Average Vol. (3m)","EPS","P/E Ratio","Beta","Dividend","Yield","5 Minutes","15 Minutes","30 Minutes","Hourly","5 Hours","Daily","Weekly","Monthly","Daily","1 Week","1 Month","YTD","1 Year","3 Years"
+
+"Market Value","$0.00"
+"Open P/L","$0.00 / 0.00%"
+"Daily P/L","-$1,455,371,155,860.01 / -0.02%"
+"Total P/L","$212,354,516,453.20"
+
+
+"Open Positions"
+"","Name","Symbol","Exchange","Open Date","Type","Amount","Open Price","Current Price","Extended Hours","Extended Hours (%)","Prev.","Market Value","Commission","Net P/L%","Weight","Daily P/L","Daily P/L%","Net P/L","Next Earnings Date"
+
+
+"Closed Positions"
+"","Name","Symbol","Exchange","Open Date","Type","Amount","Open Price","Close Date","Close Price","Gain%","Net P/L"
+"","Bitcoin","BTC/USD","Investing.com","03/19/2021","BUY","1000000000.00000000","57,895.3","03/19/2021","57,891.5","-0.01%","-$3,800,000,010.00"
+"","Bitcoin","BTC/USD","Investing.com","03/19/2021","SELL","1000000000.00000000","57,859.6","03/19/2021","57,891.5","-0.06%","-$31,900,000,010.00"
+"","Bitcoin","BTC/USD","Investing.com","03/19/2021","BUY","1000000000.00000000","57,891.5","03/19/2021","57,887.8","-0.01%","-$3,700,000,010.00"
+"","Bitcoin GBP Index","BTC/GBP","Investing.com","03/19/2021","BUY","1000000000.00000000","41,558.6","03/19/2021","41,562.4","0.01%","$5,294,899,860.66"
+"","Bitcoin JPY Index","BTC/JPY","Investing.com","03/19/2021","BUY","1000000000.00000000","6,308,249","03/19/2021","6,306,352","-0.03%","-$17,416,357,000.92"
+"","Bitcoin KRW Index","BTC/KRW","Investing.com","03/19/2021","BUY","1000000000.00000000","67,779,864","03/19/2021","67,776,820","-0.00%","-$2,696,984,000.09"
+"","Bitcoin Euro Index","BTC/EUR","Investing.com","03/19/2021","BUY","1000000000.00000000","48,591.7","03/19/2021","48,631.1","0.08%","$46,964,799,880.80"
+"","Bitcoin IDR Index","BTC/IDR","Investing.com","03/19/2021","SELL","1000000000.00000000","845,915,826","03/19/2021","845,058,634","0.10%","$591,205,319.99"
+"","BTC/IDR","BTC/IDR","Luno","03/19/2021","SELL","1000000000.00000000","845,875,000","03/19/2021","845,845,000","3.55%","$20,690,999.90"
+"","BTC/XAU","BTC/XAU","Synthetic","03/19/2021","SELL","1000000000.00000000","33.4312","03/19/2021","33.3729","174.39%","$101,290,419,998.95"
+"","BTC/GBP","BTC/GBP","Coinbase Pro","03/19/2021","SELL","1000000000.00000000","41,671.5","03/19/2021","41,586.5","203.98%","$118,438,999,990.00"
+"","BTC/IDR","BTC/IDR","Luno","03/19/2021","SELL","1000000.00000000","844,358,000","03/19/2021","843,500,000","10.16%","$594,593.90"
+"","BTC/EUR","BTC/EUR","Coinbase Pro","03/19/2021","SELL","1000000.00000000","48,206.2","03/19/2021","48,542.9","-69.85%","-$401,312,740.00"
+"","BTC/KRW","BTC/KRW","Coinone","03/19/2021","SELL","1000000.00000000","67,039,000","03/19/2021","67,606,000","-84.58%","-$502,362,010.00"
+"","BTC/GBP","BTC/GBP","Coinbase Pro","03/19/2021","SELL","1000000.00000000","41,291.1","03/19/2021","41,169.1","29.55%","$169,921,590.00"
+
+"Closed P/L","$212,354,516,453.20"
+
+

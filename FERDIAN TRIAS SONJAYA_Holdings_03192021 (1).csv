@@ -1,0 +1,26 @@
+﻿"Open Positions Summary"
+"","Name","Symbol","Exchange","Type","Amount","Avg Price","Current Price","Extended Hours","Extended Hours (%)","Prev.","Market Value","Commission","Weight","Daily P/L","Daily P/L%","Net P/L%","Net P/L","Next Earnings Date","Exchange","Last","Bid","Ask","Extended Hours","Extended Hours (%)","Open","Prev.","High","Low","Chg.","Chg. %","Vol.","Next Earnings Date","Time","Market Cap","Revenue","Average Vol. (3m)","EPS","P/E Ratio","Beta","Dividend","Yield","5 Minutes","15 Minutes","30 Minutes","Hourly","5 Hours","Daily","Weekly","Monthly","Daily","1 Week","1 Month","YTD","1 Year","3 Years"
+
+"Market Value","$0.00"
+"Open P/L","$0.00 / 0.00%"
+"Daily P/L","-$1,049,673.31 / -0.00%"
+"Total P/L","-$1,072,081.34"
+
+
+"Open Positions"
+"","Name","Symbol","Exchange","Open Date","Type","Amount","Open Price","Current Price","Extended Hours","Extended Hours (%)","Prev.","Market Value","Commission","Net P/L%","Weight","Daily P/L","Daily P/L%","Net P/L","Next Earnings Date"
+
+
+"Closed Positions"
+"","Name","Symbol","Exchange","Open Date","Type","Amount","Open Price","Close Date","Close Price","Gain%","Net P/L"
+"","Bank Central Asia","BBCA.JK","JK","03/19/2021","SELL","90000.00000000","33,525","03/19/2021","33,850","-0.97%","-$20.21"
+"","FTSE 100","UK100","LON","03/19/2021","SELL","1000000.00000000","6,779.68","03/19/2021","6,779.68","0.00%","-$13.92"
+"","Bank Central Asia","BBCA.JK","JK","03/19/2021","SELL","14000000.00000000","33,525","03/19/2021","33,525","0.00%","-$0.00"
+"","USD/RUB","USD/RUB","FX","03/19/2021","BUY","1000000000.00000000","74.3936","03/19/2021","74.3129","-108.48%","-$1,086,222.13"
+"","RUB/IDR","RUB/IDR","FX","03/19/2021","BUY","1700000000.00000000","193.70","03/19/2021","193.91","108.41%","$247.40"
+"","RUB/GBP","RUB/GBP","FX","03/19/2021","BUY","1000000000.00000000","0.00965","03/19/2021","0.00966","103.63%","$13,928.87"
+"","Bitcoin RUB Index","BTC/RUB","Investing.com","03/19/2021","BUY","1000000000.00000000","4,197,443","03/19/2021","4,197,443","-0.00%","-$1.34"
+
+"Closed P/L","-$1,072,081.34"
+
+

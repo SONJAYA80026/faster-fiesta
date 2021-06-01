@@ -1,0 +1,33 @@
+﻿"Rangkuman Posisi Terbuka"
+"","Nama","Simbol","Bursa","Jenis","Jumlah","Harga Rata-Rata","Hrg Skrg","Perpanjangan Waktu","Perpanjangan Waktu (%)","Sblm.","Nilai Pasar","Komisi","Bobot","P/L Harian","P/L Harian %","P/L Bersih%","P/L Bersih","Tanggal Penghasilan Berikutnya","Bursa","Terakhir","Bid","Ask","Perpanjangan Waktu","Perpanjangan Waktu (%)","Pembukaan","Sblm.","Tertinggi","Terendah","Prb.","Prb.%","Vol.","Tanggal Penghasilan Berikutnya","Waktu","Market Cap","Pendapatan","Vol.Rata-Rata (3bln)","EPS","Rasio P/E","Beta","Dividen","Imbal Hasil","5 Menit","15 Menit","30 Menit","Per Jam","5 Jam","Harian","Mingguan","Bulanan","Harian","1 Minggu","1 Bulan","YTD","1 Tahun","3 Tahun"
+
+"Nilai Pasar","$0,00"
+"P/L Terbuka","$0,00 / 0,00%"
+"P/L Harian","$49.999.496.811,56 / 0,00%"
+"P/L Total","$21.184.414.081,82"
+
+
+"Posisi Terbuka"
+"","Nama","Simbol","Bursa","Tgl Buka","Jenis","Jumlah","Harga Pembukaan","Hrg Skrg","Perpanjangan Waktu","Perpanjangan Waktu (%)","Sblm.","Nilai Pasar","Komisi","P/L Bersih%","Bobot","P/L Harian","P/L Harian %","P/L Bersih","Tanggal Penghasilan Berikutnya"
+
+
+"Posisi Tertutup"
+"","Nama","Simbol","Bursa","Tanggal Pembukaan","Jenis","Jumlah","Harga Pembukaan","Tanggal Penutupan","Harga Penutupan","Untung%","P/L Bersih"
+"","Bank Central Asia","BBCA.JK","JK","03/18/2021","Beli","1000000000.00000000","33.525","03/18/2021","33.525","-0,00%","-$0,00"
+"","CRUISER FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS D","0P0000UCUS","SA","03/18/2021","Jual","1000000.00000000","3,621","03/18/2021","3,621","0,00%","$0,00"
+"","CRUISER FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS D","0P0000UCUS","SA","03/18/2021","Beli","1000000.00000000","3,621","03/18/2021","3,621","-0,00%","-$0,18"
+"","Emas","GCJ1","ICE","03/18/2021","Jual","1000.00000000","1.736,55","03/18/2021","1.736,45","0,01%","$10.000,00"
+"","Emas","GCJ1","ICE","03/18/2021","Beli","10000.00000000","1.734,90","03/18/2021","1.735,55","0,04%","$649.999,79"
+"","BTC/GBP","BTC/GBP","Coinbase Pro","03/18/2021","Jual","10000.00000000","41.757,4","03/18/2021","41.839,5","-19,66%","-$1.145.869,82"
+"","Ethereum","ETH/USD","Investing.com","03/18/2021","Jual","10000.00000000","1.814,58","03/18/2021","1.817,22","-0,15%","-$26.400,00"
+"","Bitcoin","BTC/USD","Investing.com","03/18/2021","Jual","10000.00000000","58.297,1","03/18/2021","58.365,0","-0,12%","-$679.000,00"
+"","ETH/XAU","ETH/XAU","Synthetic","03/18/2021","Jual","10000.00000000","1,04284","03/18/2021","1,04397","-10,84%","-$19.647,88"
+"","XAU/KWD","XAU/KWD","FX","03/18/2021","Jual","1000000000.00000000","528,7700","03/18/2021","528,7200","0,95%","$165.625.000,00"
+"","Bitcoin","BTC/USD","Investing.com","03/18/2021","Jual","1000000000.00000000","58.954,5","03/18/2021","58.985,5","-0,05%","-$31.000.000.000,00"
+"","Emas","GCJ1","ICE","03/18/2021","Jual","1000000000.00000000","1.749,30","03/18/2021","1.749,20","0,01%","$99.999.999.999,91"
+"","Ethereum","ETH/USD","Investing.com","03/18/2021","Jual","1000000000.00000000","1.832,41","03/18/2021","1.830,39","0,11%","$2.020.000.000,00"
+"","Emas","GCJ1","ICE","03/18/2021","Jual","1000000000.00000000","1.749,35","03/18/2021","1.749,85","-0,03%","-$50.000.000.000,00"
+
+"P/L Tertutup","$21.184.414.081,82"
+
+
