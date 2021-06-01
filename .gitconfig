@@ -1,0 +1,10 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = SonjayaGigaGit
+	email = 81095699+SonjayaJetBrain@users.noreply.github.com
+[init]
+	defaultBranch = SOnjayaGigaGit
