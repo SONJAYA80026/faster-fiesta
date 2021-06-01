@@ -1,0 +1,8 @@
+2021-03-15T15:43:39.1149944Z ##[section]Starting: Prepare job pre-commit
+2021-03-15T15:43:39.1152900Z Evaluating strategy
+2021-03-15T15:43:39.1153155Z Creating job '__default'
+2021-03-15T15:43:39.1153484Z Evaluating timeout
+2021-03-15T15:43:39.1153568Z Evaluating cancel timeout
+2021-03-15T15:43:39.1153660Z Evaluating continue on error
+2021-03-15T15:43:39.1153757Z Evaluating target
+2021-03-15T15:43:39.1229231Z ##[section]Finishing: Prepare job pre-commit

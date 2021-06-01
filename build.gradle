@@ -1,0 +1,189 @@
+/*
+ * Copyright 2017-2020 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license.
+ */
+
+buildscript {
+    if (project.hasProperty("bootstrap")) {
+        ext.kotlin_version = property('kotlin.version.snapshot')
+        ext["kotlin.native.home"] = System.getenv("KONAN_LOCAL_DIST")
+    } else {
+        ext.kotlin_version = property('kotlin.version')
+    }
+    if (project.hasProperty("library.version")) {
+        ext.overriden_version = property('library.version')
+    }
+    ext.experimentalsEnabled = ["-progressive", "-Xuse-experimental=kotlin.Experimental",
+                                "-Xuse-experimental=kotlin.ExperimentalMultiplatform",
+                                "-Xuse-experimental=kotlinx.serialization.InternalSerializationApi"
+    ]
+
+    ext.experimentalsInTestEnabled = ["-progressive", "-Xuse-experimental=kotlin.Experimental",
+                                      "-Xuse-experimental=kotlin.ExperimentalMultiplatform",
+                                      "-Xuse-experimental=kotlinx.serialization.ExperimentalSerializationApi",
+                                      "-Xuse-experimental=kotlinx.serialization.InternalSerializationApi",
+                                      "-Xuse-experimental=kotlin.ExperimentalUnsignedTypes"
+    ]
+
+    /*
+    * This property group is used to build kotlinx.serialization against Kotlin compiler snapshot.
+    * When build_snapshot_train is set to true, kotlin_version property is overridden with kotlin_snapshot_version.
+    * DO NOT change the name of these properties without adapting kotlinx.train build chain.
+    */
+    def prop = rootProject.properties['build_snapshot_train']
+    ext.build_snapshot_train = prop != null && prop != ""
+    if (build_snapshot_train) {
+        ext.kotlin_version = rootProject.properties['kotlin_snapshot_version']
+        if (kotlin_version == null) {
+            throw new IllegalArgumentException("'kotlin_snapshot_version' should be defined when building with snapshot compiler")
+        }
+        repositories {
+            mavenLocal()
+            maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+            maven { url "https://bintray.com/jetbrains/kotlin-native-dependencies" }
+        }
+    }
+    // These two flags are enabled in train builds for JVM IR compiler testing
+    ext.jvm_ir_enabled = rootProject.properties['enable_jvm_ir'] != null
+    ext.jvm_ir_api_check_enabled = rootProject.properties['enable_jvm_ir_api_check'] != null
+
+    repositories {
+        mavenLocal()
+        // Future replacement for kotlin-dev, with cache redirector
+        maven { url "https://cache-redirector.jetbrains.com/maven.pkg.jetbrains.space/kotlin/p/kotlin/dev" }
+        maven {
+            url "https://kotlin.bintray.com/kotlin-dev"
+            credentials {
+                username = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER') ?: ""
+                password = project.hasProperty('bintrayApiKey') ? project.property('bintrayApiKey') : System.getenv('BINTRAY_API_KEY') ?: ""
+            }
+        }
+        maven { url 'https://kotlin.bintray.com/kotlin-eap' }
+        maven { url 'https://kotlin.bintray.com/kotlinx' }
+        maven { url "https://dl.bintray.com/jetbrains/kotlin-native-dependencies" }
+        maven { url 'https://maven.pkg.jetbrains.space/kotlin/p/dokka/dev' }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+
+    configurations.classpath {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            if (details.requested.group == 'org.jetbrains.kotlin') {
+                details.useVersion kotlin_version
+            }
+        }
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-serialization:$kotlin_version"
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:$dokka_version"
+        classpath "org.jetbrains.kotlinx:binary-compatibility-validator:$validator_version"
+        classpath "org.jetbrains.kotlinx:kotlinx-knit:$knit_version"
+
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.8'
+
+        // Various benchmarking stuff
+        classpath "com.github.jengelman.gradle.plugins:shadow:4.0.2"
+        classpath "me.champeau.gradle:jmh-gradle-plugin:0.4.8"
+        classpath "net.ltgt.gradle:gradle-apt-plugin:0.21"
+    }
+}
+
+// To make it visible for compiler-version.gradle
+ext.compilerVersion = org.jetbrains.kotlin.config.KotlinCompilerVersion.VERSION
+ext.nativeDebugBuild = org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType.DEBUG
+apply plugin: 'binary-compatibility-validator'
+
+apiValidation {
+    ignoredProjects += ["benchmark", "guide", "kotlinx-serialization"]
+}
+
+apply plugin: 'base'
+apply plugin: 'kotlinx-knit'
+
+knit {
+    siteRoot = "https://kotlin.github.io/kotlinx.serialization"
+    moduleDocs = "build/dokka/htmlMultiModule"
+}
+
+// Build API docs for all modules with dokka before running Knit
+knitPrepare.dependsOn "dokka"
+
+allprojects {
+    group 'org.jetbrains.kotlinx'
+
+    def deployVersion = properties['DeployVersion']
+    if (deployVersion != null) version = deployVersion
+
+    if (project.hasProperty("bootstrap")) {
+        version = version + '-SNAPSHOT'
+    }
+
+    // the only place where HostManager could be instantiated
+    project.ext.hostManager = new org.jetbrains.kotlin.konan.target.HostManager()
+
+    if (build_snapshot_train) {
+        // Snapshot-specific
+        repositories {
+            mavenLocal()
+            maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+        }
+    }
+
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            if (details.requested.group == 'org.jetbrains.kotlin') {
+                details.useVersion kotlin_version
+            }
+        }
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://dl.bintray.com/kotlin/kotlinx" }
+        // Future replacement for kotlin-dev, with cache redirector
+        maven { url "https://cache-redirector.jetbrains.com/maven.pkg.jetbrains.space/kotlin/p/kotlin/dev" }
+        maven {
+            url "https://kotlin.bintray.com/kotlin-dev"
+            credentials {
+                username = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER') ?: ""
+                password = project.hasProperty('bintrayApiKey') ? project.property('bintrayApiKey') : System.getenv('BINTRAY_API_KEY') ?: ""
+            }
+        }
+        maven { url 'https://maven.pkg.jetbrains.space/kotlin/p/dokka/dev' }
+        maven { url "https://dl.bintray.com/kotlin/kotlin-eap" }
+        jcenter() // blocker: https://github.com/valich/intellij-markdown/issues/64
+    }
+}
+
+subprojects {
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.AbstractKotlinCompile).all { task ->
+        if (task.name.contains("Test") || task.name.contains("Jmh")) {
+            task.kotlinOptions.freeCompilerArgs += experimentalsInTestEnabled
+        } else {
+            task.kotlinOptions.freeCompilerArgs += experimentalsEnabled
+        }
+    }
+
+    apply from: rootProject.file('gradle/teamcity.gradle')
+    // Configure publishing for some artifacts
+    if (project.name != "benchmark" && project.name != "guide") {
+        apply from: rootProject.file('gradle/publishing.gradle')
+    }
+
+}
+
+apply from: rootProject.file('gradle/compiler-version.gradle')
+apply from: rootProject.file("gradle/dokka.gradle")
+
+// Disable binary compatibility check for JVM IR compiler output by default
+if (jvm_ir_enabled) {
+    subprojects { project ->
+        afterEvaluate {
+            configure(tasks.matching { it.name == "apiCheck" }) {
+                enabled = enabled && jvm_ir_api_check_enabled
+            }
+        }
+    }
+}
